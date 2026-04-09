@@ -5,21 +5,21 @@
 class ServflowPro < Formula
   desc "ServFlow Pro - API management and testing tool"
   homepage "https://github.com/Servflow/servflow-pro"
-  version "0.1.15"
+  version "0.1.16"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.15/servflow-pro_Darwin_x86_64.tar.gz"
-      sha256 "242e695cfb900279ced879324eb706934a10366e5dc2fe07b79fa802ace86029"
+      url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.16/servflow-pro_Darwin_x86_64.tar.gz"
+      sha256 "36d76876274ff3b4f7fb7b749b4982fef99a850c430a3dc4c8a61f40a4b427b4"
 
       define_method(:install) do
         bin.install "servflow-pro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.15/servflow-pro_Darwin_arm64.tar.gz"
-      sha256 "d68971d2ca1d929bc1be4a620d3ae8890814443c331983516863d3521edbc50b"
+      url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.16/servflow-pro_Darwin_arm64.tar.gz"
+      sha256 "e83ffc5e5d381e80bb367e92dda529fce35432c196a0cbeab334f2fd9b61ce38"
 
       define_method(:install) do
         bin.install "servflow-pro"
@@ -29,15 +29,15 @@ class ServflowPro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.15/servflow-pro_Linux_x86_64.tar.gz"
-      sha256 "bdb35914ebc7a27567daa07db87681658cd5d1f12e2773b643c984dcf1676ad2"
+      url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.16/servflow-pro_Linux_x86_64.tar.gz"
+      sha256 "274e471e47402beb0cf0b6149d62bea7b9137b708492303f7b33acccb4b4701c"
       define_method(:install) do
         bin.install "servflow-pro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.15/servflow-pro_Linux_arm64.tar.gz"
-      sha256 "c45160c0eb1eda9bb8ce126dd48d5a92c54d711438df1d5a26d74c62e695b122"
+      url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.16/servflow-pro_Linux_arm64.tar.gz"
+      sha256 "5a47e236461bcec8f382f27ddf83151f7071c3cd488c5843233a455bcea49ab3"
       define_method(:install) do
         bin.install "servflow-pro"
       end
