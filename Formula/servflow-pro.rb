@@ -11,7 +11,7 @@ class ServflowPro < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.15/servflow-pro_Darwin_x86_64.tar.gz"
-      sha256 "332060632696260d4b93f451d5e1870e02e4c249562a716f49dcc02b3768cd8c"
+      sha256 "242e695cfb900279ced879324eb706934a10366e5dc2fe07b79fa802ace86029"
 
       define_method(:install) do
         bin.install "servflow-pro"
@@ -19,7 +19,7 @@ class ServflowPro < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.15/servflow-pro_Darwin_arm64.tar.gz"
-      sha256 "0ea91948c8201e5cc7746944fae4dfa2080b5c5413130f5cecd5becf8c6b95e5"
+      sha256 "d68971d2ca1d929bc1be4a620d3ae8890814443c331983516863d3521edbc50b"
 
       define_method(:install) do
         bin.install "servflow-pro"
@@ -30,14 +30,14 @@ class ServflowPro < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.15/servflow-pro_Linux_x86_64.tar.gz"
-      sha256 "eacb85f6036e44fe751b0c10f4b15b3f63a827d90052c92b2581290b553cd345"
+      sha256 "bdb35914ebc7a27567daa07db87681658cd5d1f12e2773b643c984dcf1676ad2"
       define_method(:install) do
         bin.install "servflow-pro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Servflow/servflow-pro/releases/download/v0.1.15/servflow-pro_Linux_arm64.tar.gz"
-      sha256 "a2ad559428d1b43c2a643c4b0a119d3f3f163284c92844664875ff03871cd5c4"
+      sha256 "c45160c0eb1eda9bb8ce126dd48d5a92c54d711438df1d5a26d74c62e695b122"
       define_method(:install) do
         bin.install "servflow-pro"
       end
